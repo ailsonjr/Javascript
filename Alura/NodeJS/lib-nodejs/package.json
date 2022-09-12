@@ -1,17 +1,24 @@
 {
-  "name": "primeirospassos",
+  "name": "verifica-links",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Verifica se há links em arquivos .md",
+  "main": "./cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./test",
     "cli": "node cli.js ./texto1.md"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["markdown", "URL"],
+  "author": "Ailson Lima Jr.",
+  "homepage": "https://github.com/ailsonjr/Javascript/tree/main/Alura/NodeJS/lib-nodejs",
   "license": "ISC",
+  "bin": {
+    "verifica-links": "./cli.js"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
   }
 }
