@@ -1,4 +1,4 @@
-import User from './User.js';
+const { User } = require('./User');
 
 class Docente extends User {
   constructor(nome, email, nascimento, role = 'docente', ativo = true) {
