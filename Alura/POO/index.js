@@ -1,11 +1,11 @@
-const { User, User5 } = require('./User');
-const Docente = require('./Docente');
-const Admin = require('./Admin');
+const { User, User5 } = require('./class/User');
+const Docente = require('./class/Docente');
+const Admin = require('./class/Admin');
 
 const novoUser = new User('Kelly', 'kelly@email.com', '2000-01-01');
 console.log(novoUser.exibirInfos());
 
-const novoAdmin = new User('Ailson', 'ailson@email.com', '1995-01-01');
+const novoAdmin = new Admin('Ailson', 'ailson@email.com', '1995-01-01');
 console.log(novoAdmin.nome);
 novoAdmin.nome = 'Beatriz';
 console.log(novoAdmin.nome);
