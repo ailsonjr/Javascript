@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Verifica se há links em arquivos .md",
   "main": "./cli.js",
+  "type": "module",
   "scripts": {
     "test": "jest ./test",
-    "cli": "node cli.js ./texto1.md"
+    "cli": "node ./src/cli.js"
   },
   "keywords": ["markdown", "URL"],
   "author": "Ailson Lima Jr.",
